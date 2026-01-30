@@ -1,0 +1,130 @@
+/* Custom Login DD - Styles */
+* { box-sizing: border-box; }
+
+body.login {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(ellipse at center, #222 0%, #000 100%);
+}
+
+body.login #login {
+    background: rgba(22, 22, 22, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 50px 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    border-top: 5px solid #161616;
+    margin: 0 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding-bottom: 25px;
+}
+
+body.login #login h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+body.login #login h1 a {
+    margin: 0 auto 25px auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 84px;
+}
+
+body.login #loginform {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.login .input,
+body.login input[type="text"],
+body.login input[type="password"] {
+    background: rgba(42, 42, 42, 0.8);
+    color: #fff;
+    border: 1px solid #161616;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+}
+
+body.login .input:focus {
+    border-color: #161616;
+    box-shadow: 0 0 10px #161616;
+    outline: none;
+}
+
+body.login .button-primary {
+    background: #161616;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+    width: 100%;
+}
+
+body.login .button-primary:hover {
+    background: #2a2a2a;
+    transform: scale(1.02);
+}
+
+body.login .message,
+body.login #login_error {
+    border-left: 4px solid #e50914;
+    background: rgba(42, 42, 42, 0.8);
+    color: #fff;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+body.login p.forgetmenot,
+body.login #nav,
+body.login #backtoblog,
+body.login .language-switcher,
+body.login #login-language-switcher {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body.login #login {
+        padding: 40px 25px;
+        padding-bottom: 20px;
+        max-width: 90%;
+    }
+    body.login .input,
+    body.login input[type="text"],
+    body.login input[type="password"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+    body.login .button-primary {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
